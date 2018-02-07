@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+      <!-- Required meta tags-->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-status-bar-style" content="black">
+      <meta name="format-detection" content="telephone=no">
+      <meta name="msapplication-tap-highlight" content="no">
+      <!-- Your app title -->
+      <title>My App</title>
+      <!-- This template defaults to the iOS CSS theme. To support both iOS and material design themes, see the Framework7 Tutorial at the link below:
+         http://www.idangero.us/framework7/tutorials/maintain-both-ios-and-material-themes-in-single-app.html
+         -->
+      <link rel="stylesheet" href="css/framework7.css">
+      <link type="text/css" rel="stylesheet" href="css/wheelcolorpicker.css" />
+      <link rel="stylesheet" href="css/styles.css">
+   </head>
+   <body  class="color-theme-indigo">
+      <div id="app">
+         <div class="statusbar"></div>
+         <div class="view view-main view-init" data-url="/">
+            <div class="page ">
+               <div class="navbar">
+                  <div class="navbar-inner">
+                <!--     <div class="left">
+                        <a href="#" class="link icon-only">
+                        <i class="icon material-icons">info_outline</i>
+                        </a>
+                     </div>  -->
+                     <div class="title sliding  left">HEDCO MD</div>
+                     <div class="right">
+                        <a class="link icon-only" id="infoBtn">
+                        <i class="icon material-icons">info_outline</i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="toolbar tabbar tabbar-labels toolbar-bottom-md">
+                  <div class="toolbar-inner">
+                     <a href="#staticColorTab" class="tab-link tab-link-active">
+                     <i class="icon material-icons">reorder</i>
+                     <span class="tabbar-label ">Material</span>
+                     </a>
+                     <a href="#animationTab" class="tab-link">
+                     <i class="icon material-icons">group_work</i>
+                     <span class="tabbar-label ">Pipe Data</span>
+                     </a>
+                  </div>
+               </div>
+			 <div class="tabs-swipeable-wrap">
+               <div class="tabs">
+                  <div id="staticColorTab" class="page-content tab tab-active">
+				  <div class="block">
+				  <div class="row no-gap">
+<img src="../hedco.png" style="height:100%; opacity:0.2; position: absolute;left: 0;right: 0;margin: auto"/>		  
+</div>
+<h2 class="block center" style="text-align: center">Pressure Vessel Material Selection Guide</h2>
+
+<div class="list inline-labels no-hairlines-md">
+
+  <ul>
+  
+      <li class="item-content item-input">
+      <div class="item-inner ">
+        <div class="item-title item-label" style="width:50%">Design Temp.(°C):</div>
+        <div class="item-input-wrap">
+          <input type="tel" id="desTemp" placeholder="Temp.(°C)">
+          <span class="input-clear-button"></span>
+        </div>
+      </div>
+    </li>
+	
+	<!--
+    <li class="item-content item-input">
+      <div class="item-inner">
+        <div class="item-title item-label" style="width:50%">Design Temp.(°C):</div>
+        <div class="item-input-wrap">
+          <input type="tel" placeholder="Temp.(°C)">
+          <span class="input-clear-button"></span>
+        </div>
+      </div>
+    </li> -->
+	</ul>
+	</div>
+	</div>
+	
+<div class="card" id="serviceCard">
+  <div class="card-header">Service Type</div>
+  <div class="card-content card-content-padding" id="serviceType"></div>
+</div>	
+	  
+<div class="card">
+  <div class="card-header">Material Group</div>
+  <div class="card-content card-content-padding" id="materialType"></div>
+</div>
+
+
+<div class="card">
+  <div class="card-header">Plate</div>
+  <div class="card-content card-content-padding" id="plateMat"></div>
+</div>
+
+<div class="card">
+  <div class="card-header">Pipe</div>
+  <div class="card-content card-content-padding" id="pipeMat"></div>
+</div>
+
+<div class="card">
+  <div class="card-header">Forging</div>
+  <div class="card-content card-content-padding" id="forgeMat"></div>
+</div>
+
+<div class="card">
+  <div class="card-header">Fitting</div>
+  <div class="card-content card-content-padding" id="fittingMat"></div>
+</div>
+
+<div class="card">
+  <div class="card-header">Tube</div>
+  <div class="card-content card-content-padding" id="tubeMat"></div>
+</div>
+
+<div class="card">
+  <div class="card-header">Pressure Bolting</div>
+  <div class="card-content card-content-padding" id="pboltMat"></div>
+</div>	  
+
+<div class="card">
+  <div class="card-header">Structural Bolting</div>
+  <div class="card-content card-content-padding" id="sboltMat"></div>
+</div>
+
+  <div class="popover popover-note4">
+    <div class="popover-inner">
+      <div class="block">
+        <p>Impact test requirements shall be checked as per code.</p>
+      </div>
+    </div>
+  </div>
+  
+    <div class="popover popover-note5">
+    <div class="popover-inner">
+      <div class="block">
+        <p>SA 516 Gr. 60 is recommended at this temperature up to -51°C</p>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="popover popover-note6">
+    <div class="popover-inner">
+      <div class="block">
+        <p>SA 266 Gr. 2 shall not be used for flange of nozzles.</p>
+      </div>
+    </div>
+  </div>
+  <div class="block">
+  
+
+  </div>
+ <div class="block-title">NOTE</div>
+<div class="block">
+  <p>This table shall be used only as a guideline for material section. Code's requirements shall be checked.</p>
+</div>
+
+ <div class="block-title">References:</div>
+<div class="block">
+  <p>[1] Bednar, Henry H. Pressure Vessel Design Handbook, Second Edilion, Krieger Publishing Company, 1990.</p>
+  <p>[2] Moss, Dennis R. Pressure Vessel Design Manual, Fourth Edition. Elsevier, 2013. </p>
+</div>
+
+<div class="block" id="infoHTML" style="display:none">
+</br>
+This app Is a property of HEDCO. No consent is granted to any indivduals or companies to copy or reprudce this app in any form.
+</br></br>
+Developed by: HEDCO, Mechanical Design Department </br>
+<a href="www.hedcoint.com">www.hedcoint.com</a>
+</div>
+
+
+					 
+
+                     <!-- Color picker -->
+                  </div>
+                  <div id="animationTab" class="page-content tab">
+						<div class="block">
+                     <h2>This part will be provided in the next version!</h2>
+						</div>
+                  </div>
+               </div>
+			   </div>
+            </div>
+         </div>
+      </div>
+      <script type="text/javascript" src="cordova.js"></script>
+      <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+      <script type="text/javascript" src="js/jquery.wheelcolorpicker.js"></script>
+      <script type="text/javascript" src="js/framework7.min.js"></script>
+      <script type="text/javascript" src="js/my-app.js"></script>
+   </body>
+</html>
