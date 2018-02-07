@@ -23,10 +23,6 @@
 <preference name="AutoHideSplashScreen" value="true" />
 <preference name="FadeSplashScreen" value="false"/>
 <preference name="ShowSplashScreenSpinner" value="false" />
-  <plugin name="cordova-plugin-statusbar" source="npm"/>
-  <preference name="StatusBarOverlaysWebView" value="true" />
-<preference name="StatusBarBackgroundColor" value="#303e8e"/>
-<preference name="StatusBarStyle" value="lightcontent" />
     <preference name="DisallowOverscroll" value="true" />
  <!--Available options default, lightcontent, blacktranslucent, blackopaque. -->
     <!-- Uncomment to use the latest, fastest iOS WebView (see this post http://devgirl.org/2016/01/11/a-faster-hybrid-app-for-the-new-year/) -->
