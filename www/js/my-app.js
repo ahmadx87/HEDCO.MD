@@ -30,9 +30,6 @@ var myApp = new Framework7({
     id: 'io.framework7.testapp',
     root: '#app',
     theme: 'md',
-    statusbar: {
-        materialBackgroundColor: '#303e8e',
-    },
     data: function() {
         return {
             user: {
