@@ -32,7 +32,7 @@ var myApp = new Framework7({
     theme: 'md',
    statusbar: {
     iosOverlaysWebView: true,
-    materialBackgroundColor: '#303e8e'
+    materialBackgroundColor: '#1e2656'
   },
     data: function() {
         return {
