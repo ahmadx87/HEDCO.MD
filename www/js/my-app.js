@@ -32,16 +32,9 @@ var myApp = new Framework7({
     theme: 'md',
     data: function() {
         return {
-            user: {
-                firstName: 'John',
-                lastName: 'Doe',
-            },
         };
     },
     methods: {
-        helloWorld: function() {
-            myApp.dialog.alert('Hello World!');
-        },
     },
     //routes: routes,
 });
