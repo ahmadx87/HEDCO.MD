@@ -52,6 +52,7 @@
   font-feature-settings: 'liga';
 }
 
+
 .koodak-font {
   font-family: 'koodak';
   direction: rtl;
@@ -66,7 +67,11 @@
 }
 
 .statusbar-overlay {
-    background: #000000;
+    background: #FFFFFF;
+}
+
+.statusbar {
+  background: pink;
 }
 
 #colorPickerDiv{
