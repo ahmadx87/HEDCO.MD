@@ -30,6 +30,10 @@ var myApp = new Framework7({
     id: 'io.framework7.testapp',
     root: '#app',
     theme: 'md',
+   statusbar: {
+    iosOverlaysWebView: true,
+    materialBackgroundColor: '#303e8e'
+  },
     data: function() {
         return {
         };
