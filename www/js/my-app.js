@@ -19,21 +19,17 @@ const materials=[[
 ['SA 213 Gr. TP 304, 304L, 316, 316L, 347','SA 213 Gr. TP 304, 304L, 316, 316L, 347','SA 334 Gr. 8','SA 334 Gr. 3','SA 334 Gr. 3','SA 334 Gr. 6 </br> SA 179','SA 179','SA 179 </br> SA 210','SA 179 </br> SA 210','SA 179 </br> SA 210','SA 213 Gr. T12','SA 213 Gr. T11','SA 213 Gr. T22','SA 213 Gr. T22','SA 213 Gr. TP304H','Incoloy Tube','SA 213 Gr. TP 310S, 310H','Inconel Tube'],
 ['Bolts: SA 320 Gr. B8 strain hardened </br>Nuts: SA 194 Gr. 8','Bolts: SA 193 Gr.  B8</br>Nuts: SA 194 Gr. 8','Bolts: SA 193 Gr.  B8 </br>Nuts: SA 194 Gr. 8','Bolts: SA 320 Gr.  L7</br>Nuts: SA 194 Gr. 4L','Bolts: SA 320 Gr.  L7</br>Nuts: SA 194 Gr. 4L','Bolts: SA 320 Gr.  L7</br>Nuts: SA 194 Gr. 4','Bolts: SA 193 Gr.  B7</br>Nuts: SA 194 Gr. 4','Bolts: SA 320 Gr.  L7</br>Nuts: SA 194 Gr. 2H','Bolts: SA 320 Gr.  L7</br>Nuts: SA 194 Gr. 2H','Bolts: SA 320 Gr.  L7</br>Nuts: SA 194 Gr. 2H','Bolts: SA 320 Gr.  L7</br>Nuts: SA 194 Gr. 2H','Bolts: SA 320 Gr.  L7</br>Nuts: SA 194 Gr. 2H','Bolts: SA 193 Gr.  B5</br>Nuts: SA 194 Gr. 3','Bolts: SA 193 Gr.  B5</br>Nuts: SA 194 Gr. 3','Bolts: SA 193 Gr.  B8</br>Nuts: SA 194 Gr. 8','Bolts: SA 193 Gr.  B8</br>Nuts: SA 194 Gr. 8','SS 310','Inconel'],
 ['Same as pressure bolts','Same as pressure bolts','Same as pressure bolts','Same as pressure bolts','Same as pressure bolts','Same as pressure bolts','A 307 Gr. A</br>A 193 Gr. B7</br>A 325</br>A 490</br>Shape: A36','A 307 Gr. A</br>A 193 Gr. B7</br>A 325</br>A 490</br>Shape: A36','A 307 Gr. A</br>A 193 Gr. B7</br>A 325</br>A 490</br>Shape: A36','Same as pressure bolts','Same as pressure bolts','Same as pressure bolts','Same as pressure bolts','Same as pressure bolts','Same as pressure bolts','Same as pressure bolts','Same as pressure bolts','Same as pressure bolts']];
-
+if (cordova.platformId == 'android') {
+    StatusBar.backgroundColorByHexString("#1e2656");
+}
  
 var $$ = Dom7;
-animations = ["رنگین کمان", "رنگین کمان+درخشش", "رنگین کمان+درخشش 2", "تپش تصادفی", "ستاره دنباله دار", "3 ستاره دنباله دار", "رفت و برگشتی", "7 رنگ پیوسته"];
-var itemToAddAnimationAfter = '';
 
 // Init App
 var myApp = new Framework7({
     id: 'io.framework7.testapp',
     root: '#app',
     theme: 'md',
-   statusbar: {
-    iosOverlaysWebView: true,
-    materialBackgroundColor: '#1e2656'
-  },
     data: function() {
         return {
         };
